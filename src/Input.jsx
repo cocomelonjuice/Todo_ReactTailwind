@@ -13,14 +13,14 @@ export default function Input ({taskList, setTaskList}){
     return (
         <div>
             <form>
-                <input className=" mt-2 font-thin sm:font-bold placeholder-black placeholder:italic  border-4 rounded-md border-red-300"
+                <input className=" mt-2 font-thin sm:font-bold placeholder-black placeholder:italic  border-2 rounded-md border-black"
                     type="text"
                     placeholder=" Add new Task"
                     value ={input}
                     onChange={(e)=>setInput(e.target.value)}
                 >
                 </input>
-                <button className='mx-2' onClick={handleAddTask}>Add</button>
+                <button className='mx-2 border-2 rounded-md border-black px-1 bg-blue-200  ' onClick={handleAddTask}>Add</button>
                 
             </form>
         </div>
